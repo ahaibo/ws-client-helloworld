@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>role complex type的 Java 类。
- * <p>
+ * 
  * <p>以下模式片段指定包含在此类中的预期内容。
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="role"&gt;
  *   &lt;complexContent&gt;
@@ -23,11 +23,13 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "role", propOrder = {
-        "id",
-        "name"
+    "id",
+    "name"
 })
 public class Role {
 
@@ -36,9 +38,11 @@ public class Role {
 
     /**
      * 获取id属性的值。
-     *
-     * @return possible object is
-     * {@link Integer }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Integer }
+     *     
      */
     public Integer getId() {
         return id;
@@ -46,9 +50,11 @@ public class Role {
 
     /**
      * 设置id属性的值。
-     *
-     * @param value allowed object is
-     *              {@link Integer }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Integer }
+     *     
      */
     public void setId(Integer value) {
         this.id = value;
@@ -56,9 +62,11 @@ public class Role {
 
     /**
      * 获取name属性的值。
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getName() {
         return name;
@@ -66,9 +74,11 @@ public class Role {
 
     /**
      * 设置name属性的值。
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setName(String value) {
         this.name = value;

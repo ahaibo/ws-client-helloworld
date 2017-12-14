@@ -8,17 +8,18 @@ import javax.xml.namespace.QName;
 
 
 /**
- * This object contains factory methods for each
- * Java content interface and Java element interface
- * generated in the com.hai.ws.api package.
- * <p>An ObjectFactory allows you to programatically
- * construct new instances of the Java representation
- * for XML content. The Java representation of XML
- * content can consist of schema derived interfaces
- * and classes representing the binding of schema
- * type definitions, element declarations and model
- * groups.  Factory methods for each of these are
+ * This object contains factory methods for each 
+ * Java content interface and Java element interface 
+ * generated in the com.hai.ws.api package. 
+ * <p>An ObjectFactory allows you to programatically 
+ * construct new instances of the Java representation 
+ * for XML content. The Java representation of XML 
+ * content can consist of schema derived interfaces 
+ * and classes representing the binding of schema 
+ * type definitions, element declarations and model 
+ * groups.  Factory methods for each of these are 
  * provided in this class.
+ * 
  */
 @XmlRegistry
 public class ObjectFactory {
@@ -32,12 +33,14 @@ public class ObjectFactory {
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.hai.ws.api
+     * 
      */
     public ObjectFactory() {
     }
 
     /**
      * Create an instance of {@link GetRoleByUser }
+     * 
      */
     public GetRoleByUser createGetRoleByUser() {
         return new GetRoleByUser();
@@ -45,6 +48,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GetRoleByUserResponse }
+     * 
      */
     public GetRoleByUserResponse createGetRoleByUserResponse() {
         return new GetRoleByUserResponse();
@@ -52,6 +56,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GetRoles }
+     * 
      */
     public GetRoles createGetRoles() {
         return new GetRoles();
@@ -59,6 +64,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GetRolesResponse }
+     * 
      */
     public GetRolesResponse createGetRolesResponse() {
         return new GetRolesResponse();
@@ -66,6 +72,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Say }
+     * 
      */
     public Say createSay() {
         return new Say();
@@ -73,6 +80,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SayResponse }
+     * 
      */
     public SayResponse createSayResponse() {
         return new SayResponse();
@@ -80,6 +88,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MyRole }
+     * 
      */
     public MyRole createMyRole() {
         return new MyRole();
@@ -87,6 +96,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Role }
+     * 
      */
     public Role createRole() {
         return new Role();
@@ -94,6 +104,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link User }
+     * 
      */
     public User createUser() {
         return new User();
@@ -101,6 +112,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MyRoleArray }
+     * 
      */
     public MyRoleArray createMyRoleArray() {
         return new MyRoleArray();
@@ -108,6 +120,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetRoleByUser }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "http://api.ws.hai.com/", name = "getRoleByUser")
     public JAXBElement<GetRoleByUser> createGetRoleByUser(GetRoleByUser value) {
@@ -116,6 +129,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetRoleByUserResponse }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "http://api.ws.hai.com/", name = "getRoleByUserResponse")
     public JAXBElement<GetRoleByUserResponse> createGetRoleByUserResponse(GetRoleByUserResponse value) {
@@ -124,6 +138,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetRoles }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "http://api.ws.hai.com/", name = "getRoles")
     public JAXBElement<GetRoles> createGetRoles(GetRoles value) {
@@ -132,6 +147,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetRolesResponse }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "http://api.ws.hai.com/", name = "getRolesResponse")
     public JAXBElement<GetRolesResponse> createGetRolesResponse(GetRolesResponse value) {
@@ -140,6 +156,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Say }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "http://api.ws.hai.com/", name = "say")
     public JAXBElement<Say> createSay(Say value) {
@@ -148,6 +165,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SayResponse }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "http://api.ws.hai.com/", name = "sayResponse")
     public JAXBElement<SayResponse> createSayResponse(SayResponse value) {

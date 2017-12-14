@@ -1,5 +1,10 @@
 import com.alibaba.fastjson.JSONObject;
 import com.hai.ws.api.*;
+import com.hai.ws.intercepter.AddAuthHeaderIntercepter;
+import org.apache.cxf.endpoint.Client;
+import org.apache.cxf.frontend.ClientProxy;
+import org.apache.cxf.interceptor.LoggingInInterceptor;
+import org.apache.cxf.interceptor.LoggingOutInterceptor;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,11 +18,30 @@ public class App {
 
     IHelloWorldService helloWorldService = null;
     IHelloWorld helloWorld = null;
+    Client client = null;
+
 
     @Before
     public void before() {
         helloWorldService = new IHelloWorldService();
         helloWorld = helloWorldService.getIHelloWorldPort();
+    }
+
+    public synchronized void initClient() {
+        if (null == client) {
+            client = ClientProxy.getClient(helloWorld);
+        }
+    }
+
+    public void intercept() {
+        initClient();
+
+        //add sys intercepter
+        client.getInInterceptors().add(new LoggingInInterceptor());
+        client.getOutInterceptors().add(new LoggingOutInterceptor());
+
+        //add custom intercepter for out intercepter
+        client.getOutInterceptors().add(new AddAuthHeaderIntercepter("hai", "123456"));
     }
 
     @Test
@@ -44,6 +68,7 @@ public class App {
 
     @Test
     public void getRoles() {
+        intercept();
         MyRoleArray roleArray = helloWorld.getRoles();
         List<MyRole> roles = roleArray.getItem();
         System.out.println("helloWorld.getRoles result:\n" + JSONObject.toJSONString(roles, true));
