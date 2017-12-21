@@ -50,6 +50,7 @@ public class App {
         System.out.println("result: " + result);
     }
 
+    //测试复杂类型
     @Test
     public void getRoleByUser() {
         User user = new User();
@@ -66,6 +67,7 @@ public class App {
         }
     }
 
+    //测试拦截器-自定义拦截器
     @Test
     public void getRoles() {
         intercept();
